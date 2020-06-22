@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title></title>
+
+            <link rel="stylesheet" type="text/css" href="Estilo.css">
+            <script type="text/javascript" src="Funcoes.js"></script>
+    </head>    
+        <body>
+           
+          
+          <h1 id="Fonte">
+            <button id="Boron" onclick="window.toggleContrast()" style="cursor: pointer;"><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><p style="font-size: 15px;" onclick="window.toggleContrast()">Contraste</p></a></button>
+          </h1>
+          
+          <!--Contraste-->  
+          
+
+            <div class="container" >
+              <a class="links" id="paracadastro"></a>
+              <a class="links" id="paralogin"></a>
+              <a class="links" id="cadastrados"></a> 
+              <div class="content">      
+                <!--FORMULÁRIO DE LOGIN-->
+                <div id="login">
+                  <form method="post" action=""> 
+                    <h1>Login</h1> 
+                    <p> 
+                      <label for="nome_login">Seu nome</label>
+                      <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+                    </p>
+                     
+                    <p> 
+                      <label for="email_login">Seu e-mail</label>
+                      <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+                    </p>
+                     
+                    <p> 
+                      <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                      <label for="manterlogado">Manter-me logado</label>
+                    </p>
+                     
+                    <p> 
+                      <input type="submit" value="Logar" /> 
+                    </p>
+                     
+                    <p class="link">
+                      
+                      <a href="#paracadastro"></a>
+                    </p>
+                  </form>
+                </div>
+           
+                <!--FORMULÁRIO DE CADASTRO-->
+                <div id="cadastro">
+                  <form method="post" action=""> 
+
+                     
+                    <h1>Informações Pessoais</h1>
+                    <p>
+                        Nome: <input type="text" name="tNome" id= "cNome" size="30" maxlength="30" placeholder="Nome Completo" ><br>
+                        Data de nacimento: <input type="date" name="tData" id="cData"><br>
+                        CPF: <input type="text" name="tCPF" id="cCPF" size="11" maxlength="15" placeholder="CPF" ><br>
+                    </p>
+                    <!--Sexo-->
+                    
+                        <h1>Endereço: Remetente </h1>
+                    <p>
+                        Número de Telefone: <input type="tel" name="tTell" id="cTell" size="10" maxlength="10" placeholder="(00) 000000000">
+                        Endereço: <input type="text" name="tEnd" id="cEnd" size="16" maxlength="20" placeholder="Ex: Quadra: 00 Rua: 00">
+                        Cidade: <input type="text" name="tCid" id="cCid" size="15" maxlength="20" placeholder="Ex: Cidade Ocidental" >
+                        Estado: <input type="text" name="tEst" id="cEst" size="15" maxlength="20" placeholder="Ex: Goiás">
+                        CEP: <input type="Text" name="tCPF" id="cCPF" size="8" maxlength="8" placeholder="Ex: 72880000">
+                    </p>
+                    
+                    <h1>Endereço: Destino </h1>
+                    <p>
+                        Nome Destinatário: <input type="text" name="tnomeEnd" id="cnomeEnd" size="16" maxlength="50" placeholder="Sérgio Martins de Sousa">
+                        Número de Telefone: <input type="tel" name="tTell" id="cTell" size="10" maxlength="10" placeholder="(00) 000000000">
+                        Endereço: <input type="text" name="tEnd" id="cEnd" size="16" maxlength="20" placeholder="Ex: Quadra: 00 Rua: 00">
+                        Cidade: <input type="text" name="tCid" id="cCid" size="15" maxlength="20" placeholder="Ex: Cidade Ocidental" >
+                        Estado: <input type="text" name="tEst" id="cEst" size="15" maxlength="20" placeholder="Ex: Goiás">
+                        CEP: <input type="Text" name="tCPF" id="cCPF" size="8" maxlength="8" placeholder="Ex: 72880000">
+                    </p>
+                    
+                    <br>
+                    <br>  
+                    
+                    <p> 
+                      <label for="email_cad">Seu e-mail</label>
+                      <input id="email_cad" name="email_cad" required="required" type="email" placeholder="serjao@berranteiro.com"/> 
+                    </p>
+                    
+                     
+                    <p> 
+                      <input onclick="codigo();" type="submit" value="Confirmar"></input> 
+                    </p>
+                                      
+                  </form>
+                </div>
+              </div>
+            </div>  
+          </body>          
+            
+    
+</html>
